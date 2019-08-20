@@ -17,7 +17,7 @@ $(function () {
         $('#asideLi li:nth-child(4)').addClass('active');
     }
 
-    $('#con h4 span').html($('#check li').length) 
+    
 
     //邮件内容区添加内容
     var conLi = list.map(function (item) {
@@ -27,7 +27,8 @@ $(function () {
     })
 
     $('#check').append(conLi);
-
+    
+    $('#con h4 span').html($('#check li').length) 
 
     //全选控制
     $('#checkAll').click(function () {
